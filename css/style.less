@@ -1,0 +1,68 @@
+@import "normalize.css";
+@import "fonts.css";
+
+@black: #333;
+@white: #fafafa;
+@blue: #3584a0;
+@grey: #888;
+
+@sansFontFamily: "Fira Sans", Helvetica, Arial, sans-serif;
+@lightSansFontFamily: @sansFontFamily;
+
+body {
+  background: @white;
+  font-family: @sansFontFamily;
+  font-weight: 300;
+  color: @black;
+  min-height: 740px;
+  line-height: 1.4;
+}
+h1, h2, h3, h4, h5 {
+  font-family: @sansFontFamily;
+  font-weight: normal;
+}
+
+.transition (...) {
+  -webkit-transition: @arguments;
+  -moz-transition:    @arguments;
+  -ms-transition:     @arguments;
+  -o-transition:      @arguments;
+  transition:         @arguments;
+}
+.transform(...) {
+  -webkit-transform: @arguments;
+  -moz-transform:    @arguments;
+  -ms-transform:     @arguments;
+  -o-transform:      @arguments;
+  transform:         @arguments;
+}
+.transform-style(...) {
+  -webkit-transform-style: @arguments;
+  -moz-transform-style:    @arguments;
+  -ms-transform-style:     @arguments;
+  -o-transform-style:      @arguments;
+  transform-style:         @arguments;
+}
+.transform-origin(...) {
+  -webkit-transform-origin: @arguments;
+  -moz-transform-origin:    @arguments;
+  -ms-transform-origin:     @arguments;
+  -o-transform-origin:      @arguments;
+  transform-origin:         @arguments;
+}
+
+.step {
+  position: relative;
+  margin: 20px auto;
+
+  width: 900px;
+  height: 700px;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  .transition(opacity 0.6s);
+
+  &.present, &.active {
+    opacity: 1;
+  }
+}
