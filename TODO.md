@@ -1,6 +1,20 @@
 # TODO
 
+* layout
+* styling
+
+
 ## Intro
+
+### Scott Logic
+
+* logo
+
+### Set the scene
+
+* everything
+
+### NPS
 
 * everything
 
