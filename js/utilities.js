@@ -36,7 +36,7 @@ steps.sort(function(a,b) {
   return (+a) - (+b);
 });
 
-var table = d3.select("#twenty-four-hours")
+var table = d3.select("#hourly-order-table")
               .append("div")
               .attr("class", "table");
 
@@ -58,7 +58,10 @@ steps.forEach(function(d, i) {
       }
       return classes.join(" ");
     })
-    .text(d);
+    .text(d)
+    .append("span")
+    .attr("class","units")
+    .text("EUR");
 });
 
 var chartWidth = 1000, chartHeight = 30;
@@ -96,7 +99,10 @@ raw.forEach(function(step, i) {
         }
         return classes.join(" ");
       })
-      .text(step[d]);
+      .text(step[d])
+      .append("span")
+      .attr("class","units")
+      .text("MW");
 
     // set up data for chart
     data.push({ step: +d, vol: +step[d] });

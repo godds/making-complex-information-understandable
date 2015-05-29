@@ -2,6 +2,8 @@
 
 * layout
 * styling
+* different background colour for example slides
+* thread in power of 10 video
 
 
 ## Intro
@@ -22,8 +24,10 @@
 ### Day Ahead
 * intro
 * sizing/position of data
+* decimal places on volumes
 * focused order curve
 * labels on order curve
+* supply and demand series labels on chart
 
 
 ## Information Architecture
