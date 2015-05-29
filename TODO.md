@@ -7,20 +7,16 @@
 ## Intro
 
 ### Scott Logic
-
 * logo
 
 ### Set the scene
-
 * everything
 
 ### NPS
-
 * everything
 
 
 ## Understand
-
 * everything
 
 ### Day Ahead
@@ -31,25 +27,22 @@
 
 
 ## Information Architecture
-
 * everything
 
 ## Secondary data
-
 * everything
 
 
 ## Numbers vs Visualisation
-
-* John Arbuthnot story
 * conclusions from JA story
+* use them together
+* DA examples (overview vs hourly order screen)
+* visualisation for relationships
 
 
 ## Passive Use
-
 * everything
 
 
 ## Outro
-
 * everything
