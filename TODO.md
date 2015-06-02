@@ -8,9 +8,6 @@
 
 ## Intro
 
-### Scott Logic
-* logo
-
 ### Set the scene
 * everything
 

@@ -87,6 +87,11 @@ svg {
 
 /** INTRO **/
 
+#scott-logic {
+  width: 500px;
+  height: 120px;
+}
+
 
 
 
@@ -110,6 +115,7 @@ svg {
 }
 
 #hourly-order-table {
+  display: none;
   opacity: 0;
   .transition(opacity @transition-time);
   width: 1500px;
@@ -198,6 +204,7 @@ svg {
   }
 }
 .impress-on-twenty-four-hours #hourly-order-table {
+  display: block;
   opacity: 1;
   .table > .row {
     opacity: 1;
@@ -211,6 +218,7 @@ svg {
 .impress-on-min-max-price #hourly-order-table,
 .impress-on-min-max-price-vols #hourly-order-table,
 .impress-on-extra-price-steps #hourly-order-table {
+  display: block;
   opacity: 1;
   .table > .row {
     &:nth-child(2) {
@@ -224,6 +232,7 @@ svg {
 }
 .impress-on-min-max-price #hourly-order-table,
 .impress-on-min-max-price-vols #hourly-order-table {
+  display: block;
   opacity: 1;
   .table > .row {
     &:nth-child(1) {
@@ -255,6 +264,7 @@ svg {
 }
 .impress-on-min-max-price-vols #hourly-order-table,
 .impress-on-extra-price-steps #hourly-order-table {
+  display: block;
   opacity: 1;
   .table > .row {
     &:nth-child(2) {
@@ -266,6 +276,7 @@ svg {
   }
 }
 .impress-on-extra-price-steps #hourly-order-table {
+  display: block;
   opacity: 1;
   .table > .row {
     &:nth-child(1),
@@ -292,6 +303,7 @@ svg {
   }
 }
 .impress-on-order-curve #hourly-order-table {
+  display: block;
   opacity: 1;
   .table > .row {
     &:nth-child(2) {
@@ -333,12 +345,9 @@ svg {
 .impress-on-supply-demand-price #supply-demand {
   opacity: 1;
 }
-.impress-on-supply-demand #hourly-order-table,
-.impress-on-supply-demand-price #hourly-order-table {
-  display: none;
-}
 
 .impress-on-order-curve-with-price #hourly-order-table {
+  display: block;
   opacity: 1;
   .table > .row {
     &:nth-child(2) {
@@ -360,6 +369,7 @@ svg {
   }
 }
 .impress-on-twenty-four-hours-order-curves #hourly-order-table {
+  display: block;
   opacity: 1;
   .table > .row {
     opacity: 1;
