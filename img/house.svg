@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 510">
+	<g class="visual-design">
+		<polygon points="0,150 290,0 580,150 	"/>
+		<text transform="matrix(1 0 0 1 205.4875 101.9632)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="28">Visual Design</text>
+	</g>
+	<g class="information-architecture">
+		<rect y="170" width="180" height="160"/>
+		<text transform="matrix(1 0 0 1 17.3204 241.3827)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="28">Information</tspan><tspan x="-3.4" y="33.6" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="28">Architecture</tspan></text>
+	</g>
+	<g class="content">
+		<rect x="200" y="170" width="180" height="160"/>
+		<text transform="matrix(1 0 0 1 240.8907 258.1827)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="28">Content</text>
+	</g>
+	<g class="interaction-design">
+		<rect x="400" y="170" width="180" height="160"/>
+		<text transform="matrix(1 0 0 1 423.1174 241.3824)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="28">Interaction</tspan><tspan x="24.1" y="33.6" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="28">Design</tspan></text>
+	</g>
+	<g class="understanding">
+		<rect y="350" width="580" height="160"/>
+		<text transform="matrix(1 0 0 1 200.0184 414.1821)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="28">User Research</tspan><tspan x="-23.2" y="48" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="28">Product Discovery</tspan></text>
+	</g>
+</svg>

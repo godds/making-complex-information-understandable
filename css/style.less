@@ -92,7 +92,49 @@ svg {
   height: 120px;
 }
 
+#my-aim-today,
+#understanding,
+#information-architecture,
+#content,
+#interaction-design,
+#visual-design {
+  width: 580px;
+  height: 510px;
 
+  g {
+    .transition(opacity @transition-time);
+  }
+}
+.impress-on-understanding #my-aim-today {
+  opacity: 1;
+  g:not(.understanding) {
+    opacity: 0.3;
+  }
+}
+.impress-on-information-architecture #my-aim-today {
+  opacity: 1;
+  g:not(.information-architecture) {
+    opacity: 0.3;
+  }
+}
+.impress-on-content #my-aim-today {
+  opacity: 1;
+  g:not(.content) {
+    opacity: 0.3;
+  }
+}
+.impress-on-interaction-design #my-aim-today {
+  opacity: 1;
+  g:not(.interaction-design) {
+    opacity: 0.3;
+  }
+}
+.impress-on-visual-design #my-aim-today {
+  opacity: 1;
+  g:not(.visual-design) {
+    opacity: 0.3;
+  }
+}
 
 
 /** UNDERSTAND **/

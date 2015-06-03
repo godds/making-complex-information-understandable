@@ -3,7 +3,6 @@
 * layout
 * styling
 * different background colour for example slides
-* thread in power of 10 video
 
 
 ## Intro
