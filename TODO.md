@@ -11,7 +11,8 @@
 * everything
 
 ### NPS
-* everything
+* why is power trading different
+* day-ahead vs intraday
 
 
 ## Understand
