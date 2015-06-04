@@ -101,7 +101,8 @@ svg {
 #information-architecture,
 #content,
 #interaction-design,
-#visual-design {
+#visual-design,
+#more-to-it {
   width: 580px;
   height: 510px;
 
@@ -138,6 +139,9 @@ svg {
   g:not(.visual-design) {
     opacity: 0.3;
   }
+}
+.impress-on-more-to-it #my-aim-today {
+  opacity: 1;
 }
 
 #power-trading,
@@ -568,6 +572,54 @@ svg {
 /** PASSIVE USE **/
 
 
+
+
+/** VISUAL DESIGN **/
+
+#data-ink,
+#data-pixels {
+  width: 500px;
+  height: 250px;
+  h1 {
+    font-size: 72px;
+    text-align: center;
+    margin: 0;
+    padding: 0.25em;
+
+    &:first-child {
+      border-bottom: 1px solid @black;
+    }
+  }
+  h2 {
+    text-align: right;
+    font-size: 36px;
+    margin-right: -150px;
+    opacity: 0.5;
+  }
+}
+
+#visual-volume,
+#visual-volume-2,
+#visual-volume-3 {
+  width: 400px;
+  height: 318px;
+  .first,
+  .second {
+    .transition(opacity @transition-time);
+  }
+}
+.impress-on-visual-volume-2 #visual-volume,
+.impress-on-visual-volume-3 #visual-volume {
+  opacity: 1;
+  .first {
+    opacity: 0;
+  }
+}
+.impress-on-visual-volume-3 #visual-volume {
+  .second {
+    opacity: 0;
+  }
+}
 
 
 /** OUTRO **/

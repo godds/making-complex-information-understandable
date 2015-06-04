@@ -45,9 +45,9 @@
 * everything
 
 
-## Data-Ink Ratio
-* everything
+## Visual Design
+* example
 
 
 ## Outro
-* everything
+* styling
