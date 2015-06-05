@@ -45,7 +45,10 @@
 
 
 ## Passive Use
-* everything
+* styling
+* highlight areas of interest
+* create a todo list
+* presnce/absence
 
 
 ## Outro
