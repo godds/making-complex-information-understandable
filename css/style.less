@@ -455,6 +455,28 @@ svg {
     opacity: 1;
   }
 }
+.impress-on-da-overview-problem-2 #hourly-order-table {
+  display: block;
+  opacity: 1;
+  .table > .row {
+    opacity: 1;
+  }
+  .hour {
+    opacity: 1;
+  }
+  .time {
+    font-size: 0em;
+    width: 0;
+  }
+  .units {
+    font-size: 0;
+  }
+  .price-step {
+    opacity: 1;
+    width: 65px;
+    font-size: 1em;
+  }
+}
 
 .impress-on-one-area-2 #areas-map.past {
   opacity: 1;
@@ -470,7 +492,69 @@ svg {
 
 /** INFORMATION ARCHITECTURE **/
 
+#visual-information-seeking {
+  width: 900px;
+  height: 400px;
+  h1 {
+    font-size: 60px;
+    margin: 0;
+    padding: 0;
+    &:nth-child(2) {
+      margin-left: 120px;
+    }
+    &:nth-child(3) {
+      text-align: right;
+    }
+  }
+  h2 {
+    text-align: right;
+    font-size: 36px;
+    opacity: 0.5;
+  }
+}
 
+.impress-on-da-overview-problem #hourly-order-table,
+.impress-on-da-overview-problem-2 #hourly-order-table {
+  display: block;
+  opacity: 1;
+  .table > .row {
+    opacity: 1;
+  }
+  .hour {
+    opacity: 1;
+  }
+  .time {
+    font-size: 0em;
+    width: 0;
+  }
+  .units {
+    font-size: 0;
+  }
+  .price-step {
+    opacity: 1;
+    width: 65px;
+    font-size: 1em;
+  }
+}
+
+#overview-first-is-nested {
+  width: 531px;
+  height: 250px;
+}
+
+#da-overview-top-level,
+#da-overview-full,
+#da-hourly-order {
+  width: 1080px;
+  height: 680px;
+  > img {
+    width: 100%;
+  }
+}
+
+.impress-on-da-hourly-order #da-overview-full {
+  opacity: 1;
+}
 
 
 /** SECONDARY DATA **/
@@ -571,7 +655,14 @@ svg {
 
 /** PASSIVE USE **/
 
-
+#da-overview-missing,
+#da-overview-reasonability {
+  width: 1080px;
+  height: 840px;
+  > img {
+    width: 100%;
+  }
+}
 
 
 /** VISUAL DESIGN **/
@@ -618,6 +709,14 @@ svg {
 .impress-on-visual-volume-3 #visual-volume {
   .second {
     opacity: 0;
+  }
+}
+
+#visual-volume-da-overview {
+  width: 1080px;
+  height: 680px;
+  > img {
+    width: 100%;
   }
 }
 

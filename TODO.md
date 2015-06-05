@@ -3,6 +3,7 @@
 * layout
 * styling
 * different background colour for example slides
+* pixelation issue
 
 
 ## Intro
@@ -28,7 +29,9 @@
 
 
 ## Information Architecture
-* everything
+* hourly order charts
+* hourly order charts rotated/sliced
+
 
 ## Secondary data
 * everything
@@ -43,10 +46,6 @@
 
 ## Passive Use
 * everything
-
-
-## Visual Design
-* example
 
 
 ## Outro
