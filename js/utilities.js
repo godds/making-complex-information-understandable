@@ -64,7 +64,7 @@ steps.forEach(function(d, i) {
     .text("EUR");
 });
 
-var chartWidth = 1000, chartHeight = 30;
+var chartWidth = 1100, chartHeight = 500;
 var x = d3.scale.linear()
           .range([0, chartWidth])
           .domain([-500,3000]);
@@ -76,7 +76,8 @@ var line = d3.svg.line()
               .y(function(d) { return y(d.vol); });
 
 // hourly rows
-var data;
+var data,
+    charts = [];
 raw.forEach(function(step, i) {
   data = [];
   row = table.append("div")
@@ -116,27 +117,66 @@ raw.forEach(function(step, i) {
               .append("svg")
               .attr("viewBox", "0 0 " + chartWidth + " " + chartHeight);
   chart.append("line")
-      .attr("class", "origin")
+      .attr("class", "y origin hourly")
       .attr("x1", 0)
       .attr("x2", chartWidth)
       .attr("y1", y(0))
       .attr("y2", y(0));
   chart.append("line")
-      .attr("class", "origin")
+      .attr("class", "x origin hourly")
       .attr("x1", x(0))
       .attr("x2", x(0))
       .attr("y1", 0)
       .attr("y2", chartHeight);
   chart.append("path")
       .datum(data)
-      .attr("class", "line")
+      .attr("class", "line hourly")
       .attr("d", line);
   chart.append("line")
-      .attr("class", "price")
+      .attr("class", "price hourly")
       .attr("x1", x(+step.price))
       .attr("x2", x(+step.price))
       .attr("y1", 0)
       .attr("y2", chartHeight);
+  charts.push({ element: chart, data: step });
 });
+
+document.getElementById("order-curve")
+  .addEventListener("impress:stepleave", function(event) {
+    d3.transition().duration(1000).tween("zoom", function() {
+      var ix = d3.interpolate(x.domain(), [-75,75]);
+      return function(t) {
+        x.domain(ix(t));
+        charts.forEach(function(chart) {
+          chart.element.select(".line.hourly")
+            .attr("d", line);
+          chart.element.select(".x.origin.hourly")
+            .attr("x1", x(0))
+            .attr("x2", x(0));
+          chart.element.select(".price.hourly")
+            .attr("x1", x(+chart.data.price))
+            .attr("x2", x(+chart.data.price));
+        });
+      };
+    });
+  });
+
+document.getElementById("order-curve-with-price")
+  .addEventListener("impress:stepleave", function(event) {
+    y.range([30,0]);
+    charts.forEach(function(chart) {
+      chart.element.select(".line.hourly")
+        .attr("d", line);
+      chart.element.select(".x.origin.hourly")
+        .attr("y1", 0)
+        .attr("y2", 30);
+      chart.element.select(".price.hourly")
+        .attr("y1", 0)
+        .attr("y2", 30);
+      chart.element.select(".y.origin.hourly")
+        .attr("y1", y(0))
+        .attr("y2", y(0));
+    });
+  });
 
 })();

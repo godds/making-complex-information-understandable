@@ -26,9 +26,8 @@
 
 ### Day Ahead
 * intro
-* sizing/position of data
-* focused order curve
 * labels on order curve
+* quantity/price axis labels on order curve
 * supply and demand series labels on chart
 
 
