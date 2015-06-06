@@ -99,7 +99,9 @@ raw.forEach(function(step, i) {
         }
         return classes.join(" ");
       })
-      .text(step[d])
+      .text(function() {
+        return step[d].toFixed(1);
+      })
       .append("span")
       .attr("class","units")
       .text("MW");

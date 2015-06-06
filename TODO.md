@@ -17,12 +17,16 @@
 
 
 ## Understand
+
+### Users
+* everything
+
+### Information
 * everything
 
 ### Day Ahead
 * intro
 * sizing/position of data
-* decimal places on volumes
 * focused order curve
 * labels on order curve
 * supply and demand series labels on chart
