@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 550">
-<path fill="#AE1E69" d="M100.6,454.9l-1.2-2.7l1.9-0.9C395.1,316.6,395.1,316.6,598.9,95.4l2.2,2c-101.8,110.5-152.9,166-215.9,211
-	c-62.5,44.7-136.1,78.4-282.7,145.6L100.6,454.9z"/>
-<path fill="#00A176" d="M599.4,454.9l-1.9-0.9c-146.6-67.2-220.2-101-282.7-145.6c-63-45-114.1-100.5-215.9-211l2.2-2
-	c203.8,221.2,203.8,221.2,497.6,355.9l1.9,0.9L599.4,454.9z"/>
-<g>
-	<polygon points="411,500 398,492.5 398,499 331,499 331,502 398,502 398,507.5 	"/>
-	<text transform="matrix(1 0 0 1 288.5661 504.5)" font-family="'FiraSans-Book'" font-size="16">Price</text>
-</g>
-<g>
-	<polygon points="74,235 66.5,222 59,235 65,235 65,303 68,303 68,235 	"/>
-	<text transform="matrix(1 0 0 1 35.691 321.867)" font-family="'FiraSans-Book'" font-size="16">Quantity</text>
-</g>
+	<path fill="#AE1E69" d="M100.6,454.9l-1.2-2.7l1.9-0.9C395.1,316.6,395.1,316.6,598.9,95.4l2.2,2c-101.8,110.5-152.9,166-215.9,211
+		c-62.5,44.7-136.1,78.4-282.7,145.6L100.6,454.9z"/>
+	<path fill="#00A176" d="M599.4,454.9l-1.9-0.9c-146.6-67.2-220.2-101-282.7-145.6c-63-45-114.1-100.5-215.9-211l2.2-2
+		c203.8,221.2,203.8,221.2,497.6,355.9l1.9,0.9L599.4,454.9z"/>
+	<g>
+		<polygon points="411,500 398,492.5 398,499 331,499 331,502 398,502 398,507.5 	"/>
+		<text transform="matrix(1 0 0 1 288.5661 504.5)" font-family="'FiraSans-Book'" font-size="16">Price</text>
+	</g>
+	<g>
+		<polygon points="74,235 66.5,222 59,235 65,235 65,303 68,303 68,235 	"/>
+		<text transform="matrix(1 0 0 1 35.691 321.867)" font-family="'FiraSans-Book'" font-size="16">Quantity</text>
+	</g>
+	<text transform="matrix(1 0 0 1 610.1666 92.0337)" fill="#AE1E69" font-family="'FiraSans-Book'" font-size="16">Supply</text>
+	<text transform="matrix(1 0 0 1 610.1669 462.0337)" fill="#00A176" font-family="'FiraSans-Book'" font-size="16">Demand</text>
 </svg>

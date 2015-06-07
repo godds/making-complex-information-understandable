@@ -262,10 +262,13 @@ svg {
     stroke-width: 2px;
     display: none;
   }
-  .origin {
+  .origin, .tick {
     fill: none;
     stroke: grey;
     stroke-width: 0.5px;
+  }
+  .label {
+    fill: grey;
   }
 }
 .impress-on-twenty-four-hours #hourly-order-table {
@@ -460,6 +463,12 @@ svg {
   .time {
     width: 0;
     font-size: 0;
+  }
+  .y.min.hourly,
+  .y.max.hourly,
+  .y.label.hourly,
+  .x.label.hourly {
+    opacity: 0;
   }
 }
 .impress-on-full-price-matrix #hourly-order-table {

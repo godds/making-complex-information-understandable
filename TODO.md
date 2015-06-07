@@ -26,9 +26,6 @@
 
 ### Day Ahead
 * intro
-* labels on order curve
-* quantity/price axis labels on order curve
-* supply and demand series labels on chart
 
 
 ## Information Architecture
@@ -51,6 +48,7 @@
 * styling
 * highlight areas of interest
 * create a todo list
+* reasonability check explanation
 * presnce/absence
 
 

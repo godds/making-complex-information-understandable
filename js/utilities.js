@@ -117,17 +117,54 @@ raw.forEach(function(step, i) {
               .append("svg")
               .attr("viewBox", "0 0 " + chartWidth + " " + chartHeight);
   chart.append("line")
-      .attr("class", "y origin hourly")
+      .attr("class", "x origin hourly")
       .attr("x1", 0)
       .attr("x2", chartWidth)
       .attr("y1", y(0))
       .attr("y2", y(0));
+  chart.append("text")
+      .attr("class", "x label hourly")
+      .attr("x", chartWidth-50)
+      .attr("y", y(0) - 7)
+      .text("0MW");
   chart.append("line")
-      .attr("class", "x origin hourly")
+      .attr("class", "y origin hourly")
       .attr("x1", x(0))
       .attr("x2", x(0))
       .attr("y1", 0)
       .attr("y2", chartHeight);
+  chart.append("text")
+      .attr("class", "y label hourly")
+      .attr("x", x(0) + 3)
+      .attr("y", 13)
+      .text("0EUR");
+  var min = chart.append("g")
+      .attr("class", "y min hourly")
+      .attr("transform", "translate(0, 13)");
+  min.append("line")
+      .attr("class", "tick")
+      .attr("x1", 0)
+      .attr("x2", 0)
+      .attr("y1", -13)
+      .attr("y2", chartHeight);
+  min.append("text")
+      .attr("class", "label")
+      .attr("x", 3)
+      .text("-500EUR");
+  var max = chart.append("g")
+      .attr("class", "y max hourly")
+      .attr("transform", "translate(" + chartWidth + ", 13)");
+  max.append("line")
+      .attr("class", "tick")
+      .attr("x1", 0)
+      .attr("x2", 0)
+      .attr("y1", -13)
+      .attr("y2", chartHeight);
+  max.append("text")
+      .attr("class", "label")
+      .attr("text-anchor", "end")
+      .attr("x", -3)
+      .text("3000EUR");
   chart.append("path")
       .datum(data)
       .attr("class", "line hourly")
@@ -150,9 +187,15 @@ document.getElementById("order-curve")
         charts.forEach(function(chart) {
           chart.element.select(".line.hourly")
             .attr("d", line);
-          chart.element.select(".x.origin.hourly")
+          chart.element.select(".y.origin.hourly")
             .attr("x1", x(0))
             .attr("x2", x(0));
+          chart.element.select(".y.label.hourly")
+            .attr("x", x(0) + 3);
+          chart.element.select(".y.min.hourly > .label")
+            .text(x.domain()[0].toFixed(0) + "EUR");
+          chart.element.select(".y.max.hourly > .label")
+            .text(x.domain()[1].toFixed(0) + "EUR");
           chart.element.select(".price.hourly")
             .attr("x1", x(+chart.data.price))
             .attr("x2", x(+chart.data.price));
@@ -167,13 +210,13 @@ document.getElementById("order-curve-with-price")
     charts.forEach(function(chart) {
       chart.element.select(".line.hourly")
         .attr("d", line);
-      chart.element.select(".x.origin.hourly")
+      chart.element.select(".y.origin.hourly")
         .attr("y1", 0)
         .attr("y2", 30);
       chart.element.select(".price.hourly")
         .attr("y1", 0)
         .attr("y2", 30);
-      chart.element.select(".y.origin.hourly")
+      chart.element.select(".x.origin.hourly")
         .attr("y1", y(0))
         .attr("y2", y(0));
     });
