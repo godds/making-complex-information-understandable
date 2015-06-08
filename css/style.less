@@ -579,9 +579,85 @@ svg {
 
 /** NUMBERS VS VISUALISATION **/
 
+#numbers-vs-visualisation,
+#numbers-vs-visualisation-3 {
+  height: 100px;
+
+  h1 {
+    font-size: 72px;
+    margin: 0;
+    padding: 0;
+
+    .number {
+      position: absolute;
+      text-align: right;
+      right: 50%;
+      margin-right: 60px;
+    }
+    .vs {
+      position: absolute;
+      font-size: 48px;
+      left: 50%;
+      margin-left: -20px;
+      top: 16px;
+    }
+    .visualisation {
+      position: absolute;
+      text-align: left;
+      left: 50%;
+      margin-left: 60px;
+    }
+  }
+}
+#numbers-vs-visualisation-3 {
+  h1 {
+    font-size: 48px;
+
+    .ish {
+      opacity: 0.5;
+      font-size: 0.8em;
+    }
+  }
+}
+.impress-on-numbers-vs-visualisation-2 #numbers-vs-visualisation,
+.impress-on-numbers-vs-visualisation-3 #numbers-vs-visualisation {
+  opacity: 1;
+}
+#numbers-visualisation-together {
+  height: 300px;
+  h1 {
+    font-size: 72px;
+    margin: 0;
+    padding: 0;
+    .question {
+      position: absolute;
+      font-size: 48px;
+      left: 50%;
+      margin-left: -7px;
+      top: -30px;
+    }
+    .together {
+      position: absolute;
+      left: 50%;
+      margin-left: -16px;
+      top: 4px;
+    }
+  }
+}
+.impress-on-numbers-visualisation-together #numbers-vs-visualisation,
+.impress-on-numbers-visualisation-together #numbers-vs-visualisation-3 {
+  opacity: 1;
+
+  h1 {
+    .vs {
+      opacity: 0;
+    }
+  }
+}
+
 #john-arbuthnot {
   text-align: center;
-  height: 600px;
+  height: 700px;
 
   img {
     width: 450px;
@@ -630,12 +706,12 @@ svg {
     margin-top: -65px;
     font-weight: 200;
   }
-  &.past {
+  &.active,
+  .impress-on-john-arbuthnot-chart2 &,
+  .impress-on-john-arbuthnot-chart3 &,
+  .impress-on-john-arbuthnot-chart4 &,
+  .impress-on-john-arbuthnot-chart5 & {
     opacity: 1;
-
-    .impress-on-john-arbuthnot-table2 & {
-      opacity: 0;
-    }
   }
 }
 #john-arbuthnot-chart2 {
@@ -660,12 +736,26 @@ svg {
     opacity: 1;
   }
 }
-#john-arbuthnot-chart5 {
-  opacity: 0;
 
-  &.active {
-    opacity: 1;
+#sparklines {
+  width: 350px;
+  height: 400px;
+  h1 {
+    text-align: center;
+    font-size: 72px;
   }
+}
+
+#da-overview-visualisation,
+#da-hourly-numbers {
+  width: 1080px;
+  height: 680px;
+  > img {
+    width: 100%;
+  }
+}
+.impress-on-da-hourly-numbers #da-overview-visualisation {
+  opacity: 1;
 }
 
 
@@ -691,28 +781,6 @@ svg {
 
 
 /** VISUAL DESIGN **/
-
-#data-ink,
-#data-pixels {
-  width: 500px;
-  height: 250px;
-  h1 {
-    font-size: 72px;
-    text-align: center;
-    margin: 0;
-    padding: 0.25em;
-
-    &:first-child {
-      border-bottom: 1px solid @black;
-    }
-  }
-  h2 {
-    text-align: right;
-    font-size: 36px;
-    margin-right: -150px;
-    opacity: 0.5;
-  }
-}
 
 #visual-volume,
 #visual-volume-2,

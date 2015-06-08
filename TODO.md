@@ -1,6 +1,6 @@
 # TODO
 
-* layout
+* layout (BIG)
 * styling
 * different background colour for example slides
 * pixelation issue
@@ -8,7 +8,7 @@
 
 ## Intro
 
-### Set the scene
+### Set the scene (BIG)
 * everything
 
 ### NPS
@@ -18,10 +18,10 @@
 
 ## Understand
 
-### Users
+### Users (BIG)
 * everything
 
-### Information
+### Information (BIG)
 * everything
 
 ### Day Ahead
@@ -33,15 +33,12 @@
 * hourly order charts rotated/sliced
 
 
-## Secondary data
+## Secondary data (BIG)
 * everything
 
 
 ## Numbers vs Visualisation
-* conclusions from JA story
 * use them together
-* DA examples (overview vs hourly order screen)
-* visualisation for relationships
 
 
 ## Passive Use
