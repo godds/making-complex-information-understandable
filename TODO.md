@@ -28,10 +28,5 @@
 * intro
 
 
-## Information Architecture (BIG)
-* hourly order charts
-* hourly order charts rotated/sliced
-
-
 ## Secondary data (BIG)
 * everything
