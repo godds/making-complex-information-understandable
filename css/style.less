@@ -85,12 +85,20 @@ svg {
 }
 
 
-/** INTRO **/
+/** INTRO / OUTRO **/
 
 #scott-logic,
 #hiring {
   width: 500px;
-  height: 120px;
+  height: 200px;
+  h2 {
+    color: @white;
+    font-size: 36px;
+    text-align: center;
+    padding: 5px;
+    margin-top: 175px;
+    background-color: #2bb3bb;
+  }
 }
 .impress-on-hiring #scott-logic {
   opacity: 1;
@@ -558,6 +566,38 @@ svg {
   height: 250px;
 }
 
+.impress-on-da-overview-observation #hourly-order-table {
+  display: block;
+  opacity: 1;
+  .table > .row {
+    opacity: 1;
+    .price-step {
+      opacity: 0;
+    }
+    .curve {
+      opacity: 1;
+      .price {
+        display: block;
+      }
+      height: 30px;
+      top: 0;
+    }
+  }
+  .hour {
+    opacity: 1;
+  }
+  .time {
+    width: 0;
+    font-size: 0;
+  }
+  .y.min.hourly,
+  .y.max.hourly,
+  .y.label.hourly,
+  .x.label.hourly {
+    opacity: 0;
+  }
+}
+
 #da-overview-top-level,
 #da-overview-full,
 #da-hourly-order {
@@ -761,6 +801,19 @@ svg {
 
 /** PASSIVE USE **/
 
+#the-illusion,
+#the-reality {
+  text-align: center;
+  h1 {
+    font-size: 72px;
+  }
+}
+
+#areas-of-interest {
+  width: 550px;
+  height: 300px;
+}
+
 #da-overview-missing-1,
 #da-overview-missing-2,
 #da-overview-reasonability {
@@ -805,13 +858,12 @@ svg {
   }
 }
 
-#visual-volume-da-overview {
+#visual-volume-da-overview,
+#presence-absence-example,
+#visual-volume-da-overview-2 {
   width: 1080px;
   height: 680px;
   > img {
     width: 100%;
   }
 }
-
-
-/** OUTRO **/

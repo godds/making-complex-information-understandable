@@ -1,8 +1,8 @@
 # TODO
 
 * layout (BIG)
-* styling
-* different background colour for example slides
+* styling (BIG)
+* different background colour for example slides (BIG)
 * pixelation issue
 
 
@@ -28,26 +28,10 @@
 * intro
 
 
-## Information Architecture
+## Information Architecture (BIG)
 * hourly order charts
 * hourly order charts rotated/sliced
 
 
 ## Secondary data (BIG)
 * everything
-
-
-## Numbers vs Visualisation
-* use them together
-
-
-## Passive Use
-* styling
-* highlight areas of interest
-* create a todo list
-* reasonability check explanation
-* presnce/absence
-
-
-## Outro
-* styling
