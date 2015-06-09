@@ -11,10 +11,6 @@
 ### Set the scene (BIG)
 * everything
 
-### NPS
-* why is power trading different
-* day-ahead vs intraday
-
 
 ## Understand
 

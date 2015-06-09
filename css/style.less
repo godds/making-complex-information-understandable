@@ -2,10 +2,11 @@
 
 @import "normalize.css";
 
-@black: #333;
-@white: #fafafa;
+@black: #231F20;
+@white: #f5f5f5;
 @blue: #3584a0;
 @grey: #999;
+@nps-primary: #00427A;
 
 @sansFontFamily: Roboto, Helvetica, Arial, sans-serif;
 @lightSansFontFamily: @sansFontFamily;
@@ -157,9 +158,7 @@ svg {
 #producers-and-consumers,
 #power-exchange,
 #why-power-trading,
-#who-nps,
-#why-is-power-trading-different,
-#day-ahead-vs-intraday {
+#who-nps {
   width: 810px;
   height: 500px;
 }
@@ -167,6 +166,48 @@ svg {
 .impress-on-who-nps #power-exchange,
 .impress-on-who-nps #why-power-trading {
   opacity: 1;
+}
+
+#why-is-power-trading-different {
+  width: 544px;
+  height: 471px;
+}
+
+#day-ahead-vs-intraday {
+  width: 700px;
+  height: 450px;
+  h1 {
+    display: inline-block;
+    width: 240px;
+    text-align: center;
+    font-size: 48px;
+    position: absolute;
+    top: 0;
+    color: @nps-primary;
+    .transform-origin(center center);
+    .transition(transform @transition-time);
+    > svg {
+      width: 240px;
+      height: 190px;
+    }
+    &.day-ahead {
+      left: 0;
+    }
+    &.intraday {
+      right: 0;
+    }
+  }
+}
+.impress-on-day-ahead #day-ahead-vs-intraday,
+.impress-on-day-ahead-2 #day-ahead-vs-intraday {
+  opacity: 1;
+  .day-ahead {
+    .transform(scale(1.4));
+  }
+  .intraday {
+    opacity: 0.5;
+    .transform(scale(0.8));
+  }
 }
 
 
@@ -261,7 +302,7 @@ svg {
 
   .line {
     fill: none;
-    stroke: black;
+    stroke: @black;
     stroke-width: 1.5px;
   }
   .price {
@@ -272,11 +313,11 @@ svg {
   }
   .origin, .tick {
     fill: none;
-    stroke: grey;
+    stroke: @grey;
     stroke-width: 0.5px;
   }
   .label {
-    fill: grey;
+    fill: @grey;
   }
 }
 .impress-on-twenty-four-hours #hourly-order-table {
