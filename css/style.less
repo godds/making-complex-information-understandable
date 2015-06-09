@@ -735,6 +735,92 @@ svg {
 
 /** SECONDARY DATA **/
 
+#derived-information {
+  height: 100px;
+  h1 {
+    font-size: 72px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+}
+#reasons-for-deriving {
+  width: 1000px;
+  height: 100px;
+  h1 {
+    font-size: 58px;
+    margin: 0;
+    padding: 0;
+
+    .answers {
+      position: absolute;
+      text-align: right;
+      right: 50%;
+      margin-right: 80px;
+      .transition(font-size @transition-time);
+    }
+    .overview {
+      position: absolute;
+      text-align: left;
+      left: 50%;
+      margin-left: 80px;
+      .transition(font-size @transition-time);
+    }
+  }
+}
+.impress-on-reasons-for-deriving #derived-information,
+.impress-on-deriving-for-answers #derived-information,
+.impress-on-deriving-for-overview #derived-information {
+  opacity: 1;
+}
+.impress-on-deriving-for-answers #reasons-for-deriving {
+  opacity: 1;
+  .answers {
+    font-size: 72px;
+  }
+  .overview {
+    font-size: 36px;
+    opacity: 0.5;
+  }
+}
+#deriving-for-answers-example {
+  width: 800px;
+  height: 600px;
+  img {
+    width: 800px;
+  }
+}
+.impress-on-deriving-for-overview #reasons-for-deriving {
+  opacity: 1;
+  .answers {
+    font-size: 36px;
+    opacity: 0.5;
+  }
+  .overview {
+    font-size: 72px;
+  }
+}
+#deriving-for-overview-example {
+  width: 1080px;
+  height: 680px;
+  > img {
+    width: 100%;
+  }
+}
+#rule-of-thumb {
+  width: 1100px;
+  height: 200px;
+  h1 {
+    font-size: 72px;
+    margin: 0;
+    padding: 0;
+    > span {
+      opacity: 0.5;
+      font-size: 0.5em;
+    }
+
+  }
+}
 
 
 /** NUMBERS VS VISUALISATION **/

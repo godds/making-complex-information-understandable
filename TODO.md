@@ -13,7 +13,3 @@
 
 ### Information (BIG)
 * everything
-
-
-## Secondary data (BIG)
-* everything
