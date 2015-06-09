@@ -105,6 +105,84 @@ svg {
   opacity: 1;
 }
 
+#set-the-scene {
+  height: 550px;
+  img {
+    width: 100%;
+  }
+}
+.impress-on-complex-information-examples #set-the-scene {
+  opacity: 1;
+}
+#complex-information-examples {
+  img {
+    position: absolute;
+
+    &:nth-child(1) {
+      top: 100px;
+      left: -30px;
+      width: 900px;
+      .transform-origin(bottom left);
+      .transform(rotate(-15deg));
+    }
+    &:nth-child(2) {
+      opacity: 0;
+      .transition(opacity @transition-time ease 1s);
+      height: 600px;
+      bottom: 0;
+      right: -50px;
+      .transform-origin(center center);
+      .transform(rotate(5deg));
+    }
+    &:nth-child(3) {
+      opacity: 0;
+      .transition(opacity @transition-time ease 2s);
+      width: 800px;
+      bottom: 0;
+      left: -50px;
+      .transform-origin(top right);
+      .transform(rotate(-5deg));
+    }
+    &:nth-child(4) {
+      opacity: 0;
+      .transition(opacity @transition-time ease 3s);
+      width: 600px;
+      top: 0;
+      left: 150px;
+    }
+    &:nth-child(5) {
+      opacity: 0;
+      .transition(opacity @transition-time ease 4s);
+      width: 600px;
+      top: 100;
+      right: -100px;
+      .transform-origin(top right);
+      .transform(rotate(10deg));
+    }
+    &:nth-child(6) {
+      opacity: 0;
+      .transition(opacity @transition-time ease 5s);
+      width: 600px;
+      bottom: -50px;
+      right: 0;
+    }
+    &:nth-child(7) {
+      opacity: 0;
+      .transition(opacity @transition-time ease 6s);
+      width: 600px;
+      top: 0;
+      right: -100px;
+      .transform-origin(top right);
+      .transform(rotate(15deg));
+    }
+  }
+}
+.impress-on-complex-information-examples #complex-information-examples {
+  img {
+    opacity: 1;
+  }
+}
+
 #my-aim-today,
 #understanding,
 #information-architecture,

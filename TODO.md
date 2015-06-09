@@ -6,12 +6,6 @@
 * pixelation issue
 
 
-## Intro
-
-### Set the scene (BIG)
-* everything
-
-
 ## Understand
 
 ### Users (BIG)
@@ -19,9 +13,6 @@
 
 ### Information (BIG)
 * everything
-
-### Day Ahead
-* intro
 
 
 ## Secondary data (BIG)
