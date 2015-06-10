@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700">
-	<text transform="matrix(1 0 0 1 81.4747 495.4912)" fill="#231F20" font-family="'FiraSans-Book'" font-size="36">making complex information understandable</text>
+	<text transform="matrix(1 0 0 1 86.2603 495.4912)" fill="#231F20" font-family="'FiraSans-Light'" font-size="36">making complex information understandable</text>
 	<text transform="matrix(1 0 0 1 339.2662 607.5843)"><tspan x="0" y="0" fill="#231F20" font-family="'FiraSans-Book'" font-size="36">Graham Odds</tspan><tspan x="59.2" y="40" fill="#231F20" font-family="'FiraSans-Book'" font-size="24">@g_odds</tspan></text>
 	<g>
 		<path fill="#231F20" d="M233.6,165.5c4,0,7.2,3.2,7.2,7.2c0,4-3.2,7.2-7.2,7.2c-4,0-7.2-3.2-7.2-7.2
 			C226.5,168.7,229.7,165.5,233.6,165.5z M282.9,165.5c4,0,7.2,3.2,7.2,7.2s-3.2,7.2-7.2,7.2s-7.2-3.2-7.2-7.2
 			S278.9,165.5,282.9,165.5z M258.3,115.6c-55.2,0-100,44.8-100,100c0,55.2,44.8,100,100,100c55.2,0,100-44.8,100-100
 			C358.3,160.4,313.5,115.6,258.3,115.6z M190.9,173.7c0-21.4,14.7-38.8,32.8-38.8c18.1,0,32.8,17.4,32.8,38.8
-			c0,21.5-14.7,38.8-32.8,38.8C205.6,212.5,190.9,195.1,190.9,173.7L190.9,173.7z M242.6,287.7c2.6-7.1,8.7-12.1,15.7-12.1
-			c7,0,13,5,15.7,12.1L242.6,287.7L242.6,287.7z M292.8,212.5c-18.1,0-32.8-17.4-32.8-38.8c0-21.4,14.7-38.8,32.8-38.8
+			c0,21.5-14.7,38.8-32.8,38.8C205.6,212.5,190.9,195.1,190.9,173.7L190.9,173.7z M223.2,285.1c5.9-15.8,19.3-26.9,35-26.9
+			c15.7,0,29.1,11.1,35,26.9L223.2,285.1L223.2,285.1z M292.8,212.5c-18.1,0-32.8-17.4-32.8-38.8c0-21.4,14.7-38.8,32.8-38.8
 			c18.1,0,32.8,17.4,32.8,38.8C325.6,195.1,310.9,212.5,292.8,212.5L292.8,212.5z"/>
 		<text transform="matrix(1 0 0 1 157.1295 379.1789)" fill="#231F20" font-family="'FiraSans-Book'" font-size="72">aargh!</text>
 	</g>

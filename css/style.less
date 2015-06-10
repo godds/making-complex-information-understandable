@@ -29,6 +29,7 @@ body.impress-on-who-nps,
 body.impress-on-why-is-power-trading-different,
 body.impress-on-day-ahead-vs-intraday,
 body.impress-on-day-ahead,
+body.impress-on-nps-users,
 body.impress-on-day-ahead-2,
 body.impress-on-areas-map,
 body.impress-on-one-area,
@@ -336,6 +337,104 @@ svg {
 
 
 /** UNDERSTAND **/
+
+#understand {
+  width: 700px;
+  height: 300px;
+  .understand {
+    text-align: center;
+    font-size: 72px;
+  }
+  h1.sub {
+    display: inline-block;
+    font-size: 48px;
+    position: absolute;
+    top: 130px;
+    .transform-origin(center center);
+    .transition(transform @transition-time);
+    &.users {
+      left: 50px;
+    }
+    &.information {
+      text-align: right;
+      right: -50px;
+    }
+  }
+}
+.impress-on-understand-users #understand {
+  opacity: 1;
+  .users {
+    .transform(scale(1.4));
+  }
+  .information {
+    opacity: 0.5;
+    .transform(scale(0.8));
+  }
+}
+.impress-on-understand-information #understand {
+  opacity: 1;
+  .information {
+    .transform(scale(1.4));
+  }
+  .users {
+    opacity: 0.5;
+    .transform(scale(0.8));
+  }
+}
+
+#get-your-hands-dirty {
+  width: 500px;
+  height: 400px;
+  > svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+#info-question-1,
+#info-question-2,
+#info-question-3,
+#info-question-4,
+#info-question-5,
+#info-question-6 {
+  height: 100px;
+  h1 {
+    font-size: 68px;
+    margin: 0;
+    .transition(opacity @transition-time);
+    .transition(font-size @transition-time);
+  }
+}
+.impress-on-info-question-2 #info-question-1,
+.impress-on-info-question-3 #info-question-1,
+.impress-on-info-question-4 #info-question-1,
+.impress-on-info-question-5 #info-question-1,
+.impress-on-info-question-6 #info-question-1,
+.impress-on-info-question-3 #info-question-2,
+.impress-on-info-question-4 #info-question-2,
+.impress-on-info-question-5 #info-question-2,
+.impress-on-info-question-6 #info-question-2,
+.impress-on-info-question-4 #info-question-3,
+.impress-on-info-question-5 #info-question-3,
+.impress-on-info-question-6 #info-question-3,
+.impress-on-info-question-5 #info-question-4,
+.impress-on-info-question-6 #info-question-4,
+.impress-on-info-question-6 #info-question-5 {
+  opacity: 1;
+  h1 {
+    font-size: 48px;
+    opacity: 0.5;
+  }
+}
+
+#info-extremes,
+#info-levels {
+  width: 500px;
+  height: 400px;
+  > svg {
+    width: 100%;
+    height: 100%;
+  }
+}
 
 #areas-map {
   path,
