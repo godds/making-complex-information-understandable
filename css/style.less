@@ -12,12 +12,58 @@
 @lightSansFontFamily: @sansFontFamily;
 
 body {
-  background: @white;
+  background-color: @white;
   font-family: @sansFontFamily;
   font-weight: 300;
   color: @black;
   min-height: 740px;
   line-height: 1.4;
+  .transition(background-color 0.5s);
+}
+body.impress-on-power-trading,
+body.impress-on-producer-and-consumers,
+body.impress-on-producers-and-consumers,
+body.impress-on-power-exchange,
+body.impress-on-why-power-trading,
+body.impress-on-who-nps,
+body.impress-on-why-is-power-trading-different,
+body.impress-on-day-ahead-vs-intraday,
+body.impress-on-day-ahead,
+body.impress-on-day-ahead-2,
+body.impress-on-areas-map,
+body.impress-on-one-area,
+body.impress-on-hourly-order-table,
+body.impress-on-twenty-four-hours,
+body.impress-on-one-hour,
+body.impress-on-min-max-price,
+body.impress-on-min-max-price-vols,
+body.impress-on-extra-price-steps,
+body.impress-on-order-curve,
+body.impress-on-order-curve-focused,
+body.impress-on-supply-demand,
+body.impress-on-supply-demand-price,
+body.impress-on-order-curve-with-price,
+body.impress-on-twenty-four-hours-order-curves,
+body.impress-on-full-price-matrix,
+body.impress-on-one-area-2,
+body.impress-on-areas-map-2,
+body.impress-on-da-overview-problem,
+body.impress-on-da-overview-top-level,
+body.impress-on-da-overview-problem-2,
+body.impress-on-da-overview-observation,
+body.impress-on-da-overview-full,
+body.impress-on-da-hourly-order,
+body.impress-on-deriving-for-overview-example,
+body.impress-on-da-overview-visualisation,
+body.impress-on-da-hourly-numbers,
+body.impress-on-da-overview-missing-1,
+body.impress-on-da-overview-missing-2,
+body.impress-on-da-overview-reasonability,
+body.impress-on-visual-volume-da-overview,
+body.impress-on-presence-absence-example,
+body.impress-on-visual-volume-da-overview-2 {
+  background-color: rgba(0,66,122,0.2);
+  color: @nps-primary;
 }
 h1, h2, h3, h4, h5 {
   font-family: @sansFontFamily;
@@ -380,8 +426,8 @@ svg {
 
   .line {
     fill: none;
-    stroke: @black;
-    stroke-width: 1.5px;
+    stroke: @nps-primary;
+    stroke-width: 2px;
   }
   .price {
     fill: none;
@@ -392,7 +438,7 @@ svg {
   .origin, .tick {
     fill: none;
     stroke: @grey;
-    stroke-width: 0.5px;
+    stroke-width: 1px;
   }
   .label {
     fill: @grey;

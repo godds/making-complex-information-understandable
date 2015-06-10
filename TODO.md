@@ -2,14 +2,15 @@
 
 * layout (BIG)
 * styling (BIG)
-* different background colour for example slides (BIG)
 * pixelation issue
 
 
 ## Understand
 
 ### Users (BIG)
-* everything
+* the inaccessible user
 
 ### Information (BIG)
-* everything
+* data scientist
+* powers of 10 video
+* find the extremes

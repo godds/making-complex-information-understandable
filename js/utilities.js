@@ -206,16 +206,16 @@ document.getElementById("order-curve")
 
 document.getElementById("order-curve-with-price")
   .addEventListener("impress:stepleave", function(event) {
-    y.range([30,0]);
+    y.range([28,2]);
     charts.forEach(function(chart) {
       chart.element.select(".line.hourly")
         .attr("d", line);
       chart.element.select(".y.origin.hourly")
-        .attr("y1", 0)
-        .attr("y2", 30);
+        .attr("y1", 2)
+        .attr("y2", 28);
       chart.element.select(".price.hourly")
-        .attr("y1", 0)
-        .attr("y2", 30);
+        .attr("y1", 2)
+        .attr("y2", 28);
       chart.element.select(".x.origin.hourly")
         .attr("y1", y(0))
         .attr("y2", y(0));
