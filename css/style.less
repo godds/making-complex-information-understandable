@@ -382,6 +382,40 @@ svg {
   }
 }
 
+#inaccessible-user {
+  h1 {
+    position: absolute;
+    text-align: center;
+    font-size: 48px;
+    top: 400px;
+    left: 50%;
+    margin-left: -225px;
+    .transition(opacity @transition-time);
+  }
+}
+.impress-on-inaccessible-user-2 #inaccessible-user,
+.impress-on-inaccessible-user-3 #inaccessible-user,
+.impress-on-inaccessible-user-3 #inaccessible-user-2 {
+  opacity: 1;
+  h1 {
+    opacity: 0;
+  }
+}
+
+.impress-on-initial-ideas #pseudo-users,
+.impress-on-validate-ideas #pseudo-users,
+.impress-on-validate-ideas #initial-ideas,
+.impress-on-opinionated-guesses #pseudo-users,
+.impress-on-opinionated-guesses #initial-ideas,
+.impress-on-opinionated-guesses #validate-ideas {
+  opacity: 1;
+}
+
+#nps-users {
+  width: 885px;
+  height: 449px;
+}
+
 #get-your-hands-dirty {
   width: 500px;
   height: 400px;
